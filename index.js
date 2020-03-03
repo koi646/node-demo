@@ -1,7 +1,7 @@
 const Koa = require('koa')
 const Router = require('koa-router')
 const v1 = require('cloudevents-sdk/v1')
-
+require('./event')
 let config = {
     method: 'POST',
     url   : 'http://127.0.0.1:8080/event'
